@@ -1,170 +1,72 @@
-import { Brain, Code2, Cloud, Database, Home, BarChart3, TrendingUp, Sparkles } from 'lucide-react';
+import React from 'react';
+import { Menu, X } from 'lucide-react';
 
-export const projects = [
-  {
-    id: 'threadripper',
-    title: '🧠 THREADRIPPER',
-    subtitle: 'AI Twitter Analysis Bot',
-    description: 'AI-powered Twitter bot that detects viral threads in real-time and exposes psychological subtext using Google Gemini. Analyzes power dynamics, emotional manipulation, and hidden meanings in social media content.',
-    image: '/images/projects/threadripper.png', // Add your actual image
-    tags: ['Node.js', 'Google Gemini', 'Cloud Run', 'Twitter API', 'Firestore', 'Pub/Sub'],
-    status: 'live',
-    featured: true,
-    links: {
-      demo: 'https://your-threadripper-demo.com',
-      github: 'https://github.com/yourusername/threadripper'
-    },
-    stats: {
-      threads: 1247,
-      accuracy: 87.3,
-      users: '2.4K'
-    },
-    highlights: [
-      'Real-time Twitter monitoring',
-      'AI-powered subtext analysis', 
-      'Viral thread detection',
-      'Smart auto-replies',
-      'Psychological insights'
-    ],
-    technologies: [
-      { name: 'Google Gemini', icon: Brain, color: 'text-purple-500' },
-      { name: 'Node.js', icon: Code2, color: 'text-green-500' },
-      { name: 'Cloud Run', icon: Cloud, color: 'text-blue-500' },
-      { name: 'Firestore', icon: Database, color: 'text-orange-500' }
-    ]
-  },
-  {
-    id: 'proplistai',
-    title: '🏡 PropListAI',
-    subtitle: 'AI Real Estate Listing Generator',
-    description: 'Transform property listings with AI. Save 40+ minutes per listing while generating professional, platform-optimized descriptions that attract more buyers using Google Gemini.',
-    image: '/images/projects/proplistai.png',
-    tags: ['Google Gemini', 'Real Estate', 'AI Content', 'Vanilla JS', 'Modern CSS'],
-    status: 'live',
-    featured: true,
-    links: {
-      demo: 'https://your-proplistai.com',
-      github: 'https://github.com/yourusername/proplistai'
-    },
-    stats: {
-      timeSaved: '40+ min',
-      platforms: '3',
-      listings: '500+'
-    },
-    highlights: [
-      'AI-powered listing generation',
-      'Multi-platform optimization',
-      'Professional writing styles',
-      'Instant copy-to-clipboard',
-      '300-500 word descriptions'
-    ],
-    technologies: [
-      { name: 'Google Gemini', icon: Brain, color: 'text-purple-500' },
-      { name: 'Vanilla JS', icon: Code2, color: 'text-yellow-500' },
-      { name: 'Modern CSS', icon: Sparkles, color: 'text-pink-500' },
-      { name: 'Real Estate', icon: Home, color: 'text-blue-500' }
-    ]
-  },
-  {
-    id: 'vectr',
-    title: '📊 VECTR',
-    subtitle: 'Data Analytics Platform',
-    description: 'Advanced data visualization and analytics platform built with modern technologies. Powerful insights, beautiful charts, and real-time data processing capabilities.',
-    image: '/images/projects/vectr.png',
-    tags: ['React', 'D3.js', 'Analytics', 'Data Viz', 'Dashboard'],
-    status: 'development',
-    featured: false,
-    links: {
-      demo: '#',
-      github: '#'
-    },
-    stats: {
-      charts: '25+',
-      datasets: '100K+',
-      users: 'Beta'
-    },
-    highlights: [
-      'Real-time data processing',
-      'Interactive visualizations',
-      'Custom dashboard builder',
-      'Advanced filtering',
-      'Export capabilities'
-    ],
-    technologies: [
-      { name: 'React', icon: Code2, color: 'text-blue-500' },
-      { name: 'D3.js', icon: BarChart3, color: 'text-green-500' },
-      { name: 'Analytics', icon: TrendingUp, color: 'text-purple-500' },
-      { name: 'Database', icon: Database, color: 'text-orange-500' }
-    ]
-  },
-  // Future project placeholders
-  {
-    id: 'future-1',
-    title: '🚀 Project Alpha',
-    subtitle: 'Coming Soon',
-    description: 'Revolutionary new project that will transform how businesses operate. Built with cutting-edge AI and modern architecture.',
-    image: '/images/projects/coming-soon-1.png',
-    tags: ['AI', 'Machine Learning', 'Enterprise'],
-    status: 'planning',
-    featured: false,
-    links: {},
-    stats: {
-      progress: '15%',
-      eta: 'Q2 2025'
-    },
-    highlights: [
-      'Advanced AI integration',
-      'Enterprise scalability',
-      'Modern architecture',
-      'Cloud-native design'
-    ],
-    technologies: []
-  },
-  {
-    id: 'future-2',
-    title: '⚡ Project Beta',
-    subtitle: 'Coming Soon',
-    description: 'Next-generation solution for modern challenges. Innovative approach with user-centric design and powerful functionality.',
-    image: '/images/projects/coming-soon-2.png',
-    tags: ['Innovation', 'UX/UI', 'Performance'],
-    status: 'planning',
-    featured: false,
-    links: {},
-    stats: {
-      progress: '8%',
-      eta: 'Q3 2025'
-    },
-    highlights: [
-      'User-centric design',
-      'High performance',
-      'Innovative features',
-      'Scalable infrastructure'
-    ],
-    technologies: []
-  },
-  {
-    id: 'future-3',
-    title: '🌟 Project Gamma',
-    subtitle: 'Coming Soon',
-    description: 'Ambitious project that will redefine industry standards. Combining AI, modern web technologies, and innovative design patterns.',
-    image: '/images/projects/coming-soon-3.png',
-    tags: ['AI', 'Innovation', 'Web3'],
-    status: 'planning',
-    featured: false,
-    links: {},
-    stats: {
-      progress: '5%',
-      eta: 'Q4 2025'
-    },
-    highlights: [
-      'Industry disruption',
-      'AI-first approach',
-      'Modern architecture',
-      'Global scalability'
-    ],
-    technologies: []
-  }
-];
+const Navigation = ({ activeSection, scrollToSection }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
 
-export const featuredProjects = projects.filter(p => p.featured);
-export const otherProjects = projects.filter(p => !p.featured);
+  const navItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'contact', label: 'Contact' }
+  ];
+
+  return (
+    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn1.site-media.eu/images/0/19276410/lmw-logo.jpg-iI6IQbNbqHJkFPpNEkIM7A.png" 
+              alt="LMW Labs" 
+              className="h-8 w-8 object-contain"
+            />
+            <span className="text-xl font-bold text-gray-900">LMW Labs</span>
+          </div>
+
+          <div className="hidden md:flex space-x-8">
+            {navItems.map(item => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`font-medium transition-colors ${
+                  activeSection === item.id 
+                    ? 'text-purple-600' 
+                    : 'text-gray-600 hover:text-purple-600'
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+
+          <button
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {isOpen && (
+          <div className="md:hidden py-4 border-t">
+            {navItems.map(item => (
+              <button
+                key={item.id}
+                onClick={() => {
+                  scrollToSection(item.id);
+                  setIsOpen(false);
+                }}
+                className="block w-full text-left py-2 text-gray-600 hover:text-purple-600"
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;
