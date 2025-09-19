@@ -97,6 +97,39 @@ export const projects = [
       { name: 'Database', icon: Database, color: 'text-orange-500' }
     ]
   },
+  {
+  id: 'verbalize',
+  title: '🎤 Verbalize',
+  subtitle: 'AI Voice-to-Code Assistant',
+  description: 'Revolutionary web app that transforms natural speech into production-ready code using cutting-edge AI. Built with modern React and Google Cloud infrastructure to deliver seamless voice-to-code experiences.',
+  image: '/images/projects/verbalize.png', // You'll need to add this image
+  tags: ['React', 'Google Cloud', 'Gemini AI', 'Speech-to-Text', 'Voice UI', 'Cloud Functions'],
+  status: 'development', // Change to 'live' when deployed
+  featured: true, // Set to true if you want it featured
+  links: {
+    demo: 'https://verbalize-demo.vercel.app', // Update with your actual URL
+    github: 'https://github.com/yourusername/verbalize' // Update with your actual repo
+  },
+  stats: {
+    languages: '6+',
+    accuracy: '90%+',
+    response: '<3s'
+  },
+  highlights: [
+    'Real-time voice recognition',
+    'Multi-language code generation',
+    'AI-powered optimization',
+    'Modern React interface',
+    'Cloud-native architecture',
+    'Production-ready output'
+  ],
+  technologies: [
+    { name: 'React 18', icon: Code2, color: 'text-blue-500' },
+    { name: 'Gemini AI', icon: Brain, color: 'text-purple-500' },
+    { name: 'Google Cloud', icon: Cloud, color: 'text-blue-500' },
+    { name: 'Speech API', icon: Sparkles, color: 'text-green-500' }
+  ]
+},
   // Future project placeholders
   {
     id: 'future-1',
