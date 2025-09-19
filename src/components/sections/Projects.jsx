@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600">
-            Innovative solutions that showcase the power of AI-integrated development
+            Our Innovative solutions that showcase the power of AI-integrated development
           </p>
         </div>
 

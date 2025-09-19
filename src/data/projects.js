@@ -11,7 +11,7 @@ export const projects = [
     status: 'live',
     featured: true,
     links: {
-      demo: 'https://your-threadripper-demo.com',
+      demo: 'https://github.com/yourusername/threadripper',
       github: 'https://github.com/yourusername/threadripper'
     },
     stats: {
@@ -43,7 +43,7 @@ export const projects = [
     status: 'live',
     featured: true,
     links: {
-      demo: 'https://your-proplistai.com',
+      demo: 'https://github.com/yourusername/proplistai',
       github: 'https://github.com/yourusername/proplistai'
     },
     stats: {
@@ -75,8 +75,8 @@ export const projects = [
     status: 'development',
     featured: false,
     links: {
-      demo: '#',
-      github: '#'
+      demo: 'https://github.com/LMW-Labs/vectr_dashboard',
+      github: 'https://github.com/LMW-Labs/vectr_dashboard'
     },
     stats: {
       charts: '25+',
