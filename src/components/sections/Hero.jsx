@@ -2,10 +2,17 @@ import React from 'react';
 import { ChevronRight } from 'lucide-react';
 
 const Hero = ({ scrollToSection }) => {
+  const svgBgUrl =
+    "data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E";
+  const sectionClass =
+    "pt-20 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white relative overflow-hidden";
+  const bgSvg =
+    "bg-[url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")]";
+  const bgClass = `absolute inset-0 ${bgSvg} opacity-50`;
+
   return (
-    <section id="home" className="pt-20 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="7" cy="7" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
-      
+    <section id="home" className={sectionClass}>
+      <div className={bgClass}></div>
       <div className="relative max-w-7xl mx-auto px-6 py-20">
         <div className="text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -16,7 +23,7 @@ const Hero = ({ scrollToSection }) => {
             </span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transforming businesses with custom applications powered by cutting-edge artificial intelligence. 
+            Transforming businesses with custom applications powered by cutting-edge artificial intelligence.
             We build the future, one solution at a time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -29,9 +36,9 @@ const Hero = ({ scrollToSection }) => {
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="border border-white/30 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors"
+              className="bg-transparent border border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-900 transition-colors"
             >
-              Let's Start Building
+              Contact
             </button>
           </div>
         </div>
