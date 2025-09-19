@@ -107,8 +107,8 @@ export const projects = [
   status: 'development', // Change to 'live' when deployed
   featured: true, // Set to true if you want it featured
   links: {
-    demo: 'https://verbalize-demo.vercel.app', // Update with your actual URL
-    github: 'https://github.com/yourusername/verbalize' // Update with your actual repo
+    demo: 'https://verbalize-mauve.vercel.app/', // Update with your actual URL
+    github: 'https://github.com/LMW-Labs/verbalize' // Update with your actual repo
   },
   stats: {
     languages: '6+',
