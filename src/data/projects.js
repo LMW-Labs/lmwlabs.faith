@@ -11,8 +11,8 @@ export const projects = [
     status: 'live',
     featured: true,
     links: {
-      demo: 'https://your-threadripper-demo.com',
-      github: 'https://github.com/yourusername/threadripper'
+      demo: 'https://lmwlabs-faith-mchvva30z-cryptonorths-projects.vercel.app/',
+      github: 'https://github.com/lmw-labs/threadripper'
     },
     stats: {
       threads: 1247,
