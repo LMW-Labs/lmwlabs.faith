@@ -17,7 +17,7 @@ export const projects = [
     stats: {
       threads: 1247,
       accuracy: 87.3,
-      users: '2.4K'
+      users: '1k'
     },
     highlights: [
       'Real-time Twitter monitoring',
@@ -72,8 +72,8 @@ export const projects = [
     description: 'Advanced data visualization and analytics platform built with modern technologies. Powerful insights, beautiful charts, and real-time data processing capabilities.',
     image: '/images/projects/vectr.png',
     tags: ['React', 'D3.js', 'Analytics', 'Data Viz', 'Dashboard'],
-    status: 'development',
-    featured: false,
+    status: 'live',
+    featured: true,
     links: {
       demo: 'https://vectr-demo-4rtzxnjj6-cryptonorths-projects.vercel.app/',
       github: 'https://github.com/LMW-Labs/vectr_dashboard'
@@ -104,7 +104,7 @@ export const projects = [
   description: 'Revolutionary web app that transforms natural speech into production-ready code using cutting-edge AI. Built with modern React and Google Cloud infrastructure to deliver seamless voice-to-code experiences.',
   image: '/images/projects/verbalize.png', // You'll need to add this image
   tags: ['React', 'Google Cloud', 'Gemini AI', 'Speech-to-Text', 'Voice UI', 'Cloud Functions'],
-  status: 'development', // Change to 'live' when deployed
+  status: 'live', // Change to 'live' when deployed
   featured: true, // Set to true if you want it featured
   links: {
     demo: 'https://verbalize-iu0efw4gr-cryptonorths-projects.vercel.app/', // Update with your actual URL
@@ -152,30 +152,7 @@ export const projects = [
       'Scalable infrastructure'
     ],
     technologies: []
-  },
-  {
-    id: 'future-3',
-    title: '🌟 Project Gamma',
-    subtitle: 'Coming Soon',
-    description: 'Ambitious project that will redefine industry standards. Combining AI, modern web technologies, and innovative design patterns.',
-    image: '/images/projects/coming-soon-3.png',
-    tags: ['AI', 'Innovation', 'Web3'],
-    status: 'planning',
-    featured: false,
-    links: {},
-    stats: {
-      progress: '5%',
-      eta: 'Q4 2025'
-    },
-    highlights: [
-      'Industry disruption',
-      'AI-first approach',
-      'Modern architecture',
-      'Global scalability'
-    ],
-    technologies: []
-  }
-];
-
+  };
+  
 export const featuredProjects = projects.filter(p => p.featured);
 export const otherProjects = projects.filter(p => !p.featured);
