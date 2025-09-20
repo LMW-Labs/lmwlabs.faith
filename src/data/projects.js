@@ -152,7 +152,8 @@ export const projects = [
       'Scalable infrastructure'
     ],
     technologies: []
-  };
+  },
   
-export const featuredProjects = projects.filter(p => p.featured);
-export const otherProjects = projects.filter(p => !p.featured);
+]
+export const featuredProjects = projects.filter(p => p.featured)
+export const otherProjects = projects.filter(p => !p.featured)
