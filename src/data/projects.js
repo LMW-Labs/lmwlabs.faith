@@ -43,8 +43,8 @@ export const projects = [
     status: 'live',
     featured: true,
     links: {
-      demo: 'https://your-proplistai.com',
-      github: 'https://github.com/yourusername/proplistai'
+      demo: 'https://proplistai-demo-o94pbmlip-cryptonorths-projects.vercel.app/',
+      github: 'https://github.com/lmw-labs/proplistai'
     },
     stats: {
       timeSaved: '40+ min',
@@ -75,8 +75,8 @@ export const projects = [
     status: 'development',
     featured: false,
     links: {
-      demo: '#',
-      github: '#'
+      demo: 'https://vectr-demo-8by0b631k-cryptonorths-projects.vercel.app/',
+      github: 'https://github.com/lmw-labs/vectr/'
     },
     stats: {
       charts: '25+',
@@ -107,8 +107,8 @@ export const projects = [
   status: 'development', // Change to 'live' when deployed
   featured: true, // Set to true if you want it featured
   links: {
-    demo: 'https://verbalize-demo.vercel.app', // Update with your actual URL
-    github: 'https://github.com/yourusername/verbalize' // Update with your actual repo
+    demo: 'https://verbalize-cyxrwhocf-cryptonorths-projects.vercel.app/', // Update with your actual URL
+    github: 'https://github.com/lmw-labs/verbalize' // Update with your actual repo
   },
   stats: {
     languages: '6+',
