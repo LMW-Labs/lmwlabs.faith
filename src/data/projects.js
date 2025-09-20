@@ -11,8 +11,8 @@ export const projects = [
     status: 'live',
     featured: true,
     links: {
-      demo: 'https://github.com/yourusername/threadripper',
-      github: 'https://github.com/yourusername/threadripper'
+      demo: 'https://threadripper-demo-b4ukvlp2x-cryptonorths-projects.vercel.app/',
+      github: 'https://github.com/LMW-Labs/threadripper'
     },
     stats: {
       threads: 1247,
@@ -43,8 +43,8 @@ export const projects = [
     status: 'live',
     featured: true,
     links: {
-      demo: 'https://github.com/yourusername/proplistai',
-      github: 'https://github.com/yourusername/proplistai'
+      demo: 'https://proplistai-demo-3otyem3bz-cryptonorths-projects.vercel.app/',
+      github: 'https://github.com/LMW-Labs/proplistai'
     },
     stats: {
       timeSaved: '40+ min',
@@ -75,7 +75,7 @@ export const projects = [
     status: 'development',
     featured: false,
     links: {
-      demo: 'https://github.com/LMW-Labs/vectr_dashboard',
+      demo: 'https://vectr-demo-4rtzxnjj6-cryptonorths-projects.vercel.app/',
       github: 'https://github.com/LMW-Labs/vectr_dashboard'
     },
     stats: {
@@ -107,7 +107,7 @@ export const projects = [
   status: 'development', // Change to 'live' when deployed
   featured: true, // Set to true if you want it featured
   links: {
-    demo: 'https://verbalize-mauve.vercel.app/', // Update with your actual URL
+    demo: 'https://verbalize-iu0efw4gr-cryptonorths-projects.vercel.app/', // Update with your actual URL
     github: 'https://github.com/LMW-Labs/verbalize' // Update with your actual repo
   },
   stats: {
