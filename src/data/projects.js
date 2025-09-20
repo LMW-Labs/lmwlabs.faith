@@ -72,8 +72,8 @@ export const projects = [
     description: 'Advanced data visualization and analytics platform built with modern technologies. Powerful insights, beautiful charts, and real-time data processing capabilities.',
     image: '/images/projects/vectr.png',
     tags: ['React', 'D3.js', 'Analytics', 'Data Viz', 'Dashboard'],
-    status: 'development',
-    featured: false,
+    status: 'Live',
+    featured: true,
     links: {
       demo: 'https://vectr-demo-8by0b631k-cryptonorths-projects.vercel.app/',
       github: 'https://github.com/lmw-labs/vectr/'
@@ -104,7 +104,7 @@ export const projects = [
   description: 'Revolutionary web app that transforms natural speech into production-ready code using cutting-edge AI. Built with modern React and Google Cloud infrastructure to deliver seamless voice-to-code experiences.',
   image: '/images/projects/verbalize.png', // You'll need to add this image
   tags: ['React', 'Google Cloud', 'Gemini AI', 'Speech-to-Text', 'Voice UI', 'Cloud Functions'],
-  status: 'development', // Change to 'live' when deployed
+  status: 'Live', // Change to 'live' when deployed
   featured: true, // Set to true if you want it featured
   links: {
     demo: 'https://verbalize-cyxrwhocf-cryptonorths-projects.vercel.app/', // Update with your actual URL
