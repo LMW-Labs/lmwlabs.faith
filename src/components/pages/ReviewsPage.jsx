@@ -19,35 +19,35 @@ const ReviewsPage = () => {
   const existingReviews = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      role: 'Product Manager',
-      company: 'TechCorp Inc.',
+      name: 'Emma Guest',
+      role: 'Data Analyst',
+      company: 'Advanced Analytics',
       project: 'THREADRIPPER',
       rating: 5,
-      review: 'Absolutely incredible work! The AI analysis capabilities exceeded our expectations. The real-time viral thread detection has transformed how we monitor social media trends.',
-      date: '2024-01-15',
+      review: 'Absolutely incredible work! The AI analysis capabilities exceeded my expectations. The real-time viral thread detection has transformed how we monitor social media trends.',
+      date: '2025-08-02',
       verified: true
     },
     {
       id: 2,
-      name: 'Mike Chen',
+      name: 'Mike Craft',
       role: 'Real Estate Agent',
-      company: 'Premier Properties',
+      company: 'United Country',
       project: 'PropListAI',
       rating: 5,
       review: 'PropListAI has saved me hours of work every week. The AI-generated listings are professional and engaging. My clients love the quality of the descriptions!',
-      date: '2024-01-10',
+      date: '2025',
       verified: true
     },
     {
       id: 3,
-      name: 'Emma Rodriguez',
+      name: 'Emma ',
       role: 'Data Analyst',
-      company: 'Analytics Pro',
+      company: 'Advanced Analytics',
       project: 'VECTR',
       rating: 4,
       review: 'Great data visualization platform. The interface is intuitive and the charting capabilities are robust. Looking forward to seeing more features!',
-      date: '2024-01-08',
+      date: '2025-08-01',
       verified: false
     }
   ];
