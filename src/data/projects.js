@@ -11,7 +11,7 @@ export const projects = [
     status: 'live',
     featured: true,
     links: {
-      demo: 'https://threadripper-demo-b4ukvlp2x-cryptonorths-projects.vercel.app/',
+      demo: 'https://threadripper-demo.lmwlabs.faith/',
       github: 'https://github.com/LMW-Labs/threadripper'
     },
     stats: {
@@ -129,8 +129,7 @@ export const projects = [
     { name: 'Google Cloud', icon: Cloud, color: 'text-blue-500' },
     { name: 'Speech API', icon: Sparkles, color: 'text-green-500' }
   ]
-},
-  // Future project placeholders
+},  
   {
     id: 'future-2',
     title: '⚡ Project Beta',
@@ -153,7 +152,7 @@ export const projects = [
     ],
     technologies: []
   },
-  
+  // Future project placeholders
 ]
 export const featuredProjects = projects.filter(p => p.featured)
 export const otherProjects = projects.filter(p => !p.featured)
